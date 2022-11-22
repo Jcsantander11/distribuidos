@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>APP DE TAREAS DECENTRALIZADAS</title>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <h1>Dapp</h1>
+                    <h6>Aplicacion de tareas decentralizadas</h6>
+                    <span>Billetera</span>
+                    <span id="account"></span>
+                </div>
+                <form class="card card-body " id = "taskForm">
+                    <h4>Guardar Tarea</h4>
+
+                    <input type="text"
+                     name="title"
+                      placeholder="Escribe el titulo de la tarea" class="form-control my-4">
+
+                    <textarea rows="2"
+                     name="description" 
+                     class="form-control my-4" placeholder="Tengo que hacer..."></textarea>
+                    <button class="btn btn-primary">
+                        Guardar
+                    </button>
+                </form>
+              </div>
+
+
+            <div class="col-md-8">
+                <div class="card">
+                    Lista de Tareas
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/@truffle/contract/browser-dist/truffle-contract.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ui.js"></script>
+</body>
+</html>
